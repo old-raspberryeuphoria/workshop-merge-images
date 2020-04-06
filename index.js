@@ -19,6 +19,7 @@ mergeImages(
     format: `image/${outputFormat}`,
     width: Math.max(dimensionsRecto.width, dimensionsVerso.width),
     height: dimensionsRecto.height + dimensionsVerso.height,
+    quality: 0.8,
   }
 ).then((base64) => {
   const regex = `^data:image\/${outputFormat};base64,`;
