@@ -1,2 +1,7 @@
 node_modules
-images/output.jpg
+.DS_Store
+images/.DS_Store
+images/*/output.jpg
+images/*/output.jpeg
+images/*/output.png
+images/*/.DS_Store

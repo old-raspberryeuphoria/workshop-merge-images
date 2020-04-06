@@ -6,6 +6,6 @@ This will install dependencies: "canvas", "image-size" and "merge-images".
 
 ### Merge images
 
-This will merge "images/recto.jpg" and "images/verso.jpg" into "images/output.jpg". Try replacing these images to generate another output!
+This will merge every recto and verso files in the "images/case[x]" folders into "images/case[x]/output.[jpeg|png]".
 
 `npm run start`
