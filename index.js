@@ -47,7 +47,7 @@ function mergeRectoVerso(folder, recto, verso, outputFormat) {
       Image,
       format: `image/${outputFormat}`,
       width: Math.max(recto.width, verso.width),
-      height: recto.height + verso.height,
+      height: recto.height + verso.height + 1,
       quality: 0.8,
     }
   )
@@ -67,7 +67,7 @@ function mergeRectoVerso(folder, recto, verso, outputFormat) {
       );
     })
     .catch((err) => {
-      console.log(`Err with case ${i} when creating a ${outputFormat} image.`);
+      console.log(`Err with ${folder} when creating a ${outputFormat} image.`);
       console.log(err);
     });
 }
